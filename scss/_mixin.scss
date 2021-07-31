@@ -1,0 +1,20 @@
+@mixin mobile-pad{
+    @media (max-width: 767px){
+        @content;
+    }
+}
+@mixin pad{
+    @media(min-width: 768px){
+        @content;
+    }
+}
+@mixin pc{
+    @media(min-width: 992px){
+        @content;
+    }
+}
+@mixin fz ($size){
+    font-size: $size;
+    line-height: $size * 1.5;
+}
+

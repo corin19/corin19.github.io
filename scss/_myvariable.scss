@@ -1,0 +1,43 @@
+//color-start
+$light-gray: #8D8D8D;
+$dark-gray:  #707070;
+$bg-gray:    #E0E0E0;
+$white:      #FFFFFF;
+$light-gold: #AC8A46;
+$dark-gold:  #916000;
+//color-end
+
+//font family-start
+
+$font-family-1: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif;$font-family-2: "PingFang TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif;
+
+//font family-end
+
+.ff-1{
+    font-family: $font-family-1;
+}
+.ff-2{
+    font-family: $font-family-2;
+}
+.fz-12{
+    font-size: 12px;
+    line-height: 20px;
+}
+.fz-14{
+    @include fz(14px);
+}
+.fz-16{
+    @include fz(16px);
+}
+.fz-20{
+    @include fz(20px);
+}
+.fz-24{
+    @include fz(24px);
+}
+.fz-28{
+    @include fz(28px);
+}
+.fz-32{
+    @include fz(32px);
+}

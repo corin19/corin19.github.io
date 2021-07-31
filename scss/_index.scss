@@ -1,0 +1,133 @@
+body{
+    //index.html
+    img{
+        display: block;
+    }
+    .header-logo{
+        text-indent: 101%;
+        white-space: nowrap; 
+        background-image: url("../img/d’Perfume.png");
+        height: 38px;
+        width: 128px;
+    }
+    .navbar-light{
+        button em{
+            width: 20px;
+            height: 20px;
+        }
+        .navbar-collapse{
+            @include mobile-pad{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                background-color: $light-gray;
+                margin-left: -12px;
+            }
+            @include pad{
+                background-color: $white;
+            }
+            .navbar-nav{
+                .nav-link {
+                    color: $white;
+                    @include pad{
+                        color: $light-gray;
+                    }
+                    &:hover{
+                        background-color: $dark-gold;
+                        @include pad{
+                            color: $white;
+                        }
+                    }
+                }
+                .my-border{
+                    border-top: 1px solid $white;
+                    @include pad{
+                        border: none;
+                    }
+                }   
+            }
+        }   
+    }
+    .banner{
+        background-image: url("../img/banner.jpg");
+        height: 480px;
+        background-position: center;
+        background-size: cover;
+        @include pc{
+            height:870px;
+        }
+        h2:hover{
+            background-color: #FFFFFF4D;
+        }
+    }
+    .main{
+        h2:hover{
+            background-color: #0000000D;
+        }
+        ol{
+            list-style: inside decimal;
+        }
+    }
+    .contact{
+        background-image: url("../img/footer.jpg");
+        height: 600px;
+        background-position: left;
+        background-size: cover;
+        input{
+            text-indent: 14px;
+        }
+    }
+    .footer-logo{
+        text-indent: 101%;
+        white-space: nowrap; 
+        background-image: url("../img/d’Perfumew.png");
+        height: 38px;
+        width: 128px;
+    }
+    .footer{
+        .nav-link{
+            color: $white;
+            &:hover{
+                color: $dark-gold;
+                background-color: $white;
+            }
+        }
+    }
+    //index.html
+
+    //product.html
+    .brand{
+        .nav-link{
+            color: $white;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    .page-number .active, .page-number li:hover{
+        text-decoration: underline;
+    }
+    //product.html
+
+    //login.html
+    .login-right {
+        input{
+            text-indent:12px;
+        }
+        button{
+            color: $dark-gold;
+            background-color: $white;
+            &:hover {
+            color: $white;
+            background-color: $dark-gold;
+            }
+        }
+    }
+    //login.html
+
+    //member.html
+    .member-menu .active, .member-menu a:hover{
+        border-bottom: 3px solid $dark-gold;
+    }
+    //member.html
+}
